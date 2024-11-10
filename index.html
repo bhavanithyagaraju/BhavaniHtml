@@ -3,25 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="site.js"></script>
-    <title>Document</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- font awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-  <div style="background-color: aqua;width: 100%;height: 200px;">
-    <h1>site is ready bhavani</h1>
-  </div>
-    <div class="autocomplete-container">
-        <input
-          type="text"
-          placeholder="Search locations"
-          onchange="onInput(this)"
-        />
-        
-        <ul>
-          <!-- <li *ngFor="let location of filteredLocations" (click)="selectLocation(location)">
-            {{ location }}
-          </li> -->
-        </ul>
+  <div class="main-content">
+    <div class="top-content">
+      <!-- login logo -->
+      <div class="square-wrap">
+        <div class="diamond"></div>
+      </div>
+      <!-- login heading -->
+      <div class="heading">Welcome to Lafyuu</div>
+      <div class="title">Sign in to continue</div>
     </div>
+    <!-- login inputs with validation msgs -->
+    <div class="input-wrap">
+      <div class="input-box">
+        <i class="fa-regular fa-envelope icon"></i>
+        <input type="text" placeholder="Your Email"/>        
+      </div>
+      <span class="error-msg">Please enter valid email</span>
+      <div class="input-box">
+        <i class="fa-solid fa-lock icon"></i>
+        <input type="text" placeholder="Password"/>          
+      </div>
+      <span class="error-msg">Please enter correct password</span>
+    </div>
+    <!-- login submit buttton -->
+    <div class="button-wrap">
+      <button class="blue-button">Sign in</button>
+    </div>
+    <div class="border-wrap">
+      <div class="border-line"></div>
+      <div>OR</div>
+      <div class="border-line"></div>
+    </div>
+    <!-- login other options to login -->
+    <div class="button-wrap">
+      <div class="icon-button-wrap">
+        <img src="assets/goggle.jpeg" alt="Google" class="icon">
+        <button>Login with Google</button>
+      </div>
+      <div class="icon-button-wrap">
+        <img src="assets/facebook.avif" alt="Google" class="icon">
+        <button>Login with Facebook</button>
+      </div>
+    </div>
+    <!-- other options except login -->
+    <div class="last-div">
+      <a href="">Forgot Password?</a>
+      <p>Don’t have a account? <a href="">Register</a></p>
+    </div>
+  </div>
 </body>
 </html>
